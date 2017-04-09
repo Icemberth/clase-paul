@@ -28,8 +28,11 @@ console.log("Imprimiendo a Paul", paul); // Imprimiendo por consola a paul
 var x = 0; // Genero variable inicial del for en 0
 var paulLegth = paul.length; // Obtengo inicialmente el total de posiciones de el array paul, antes de generar el ciclo.
 
-for (x = 0; x < paulLegth; x++) {// Instancio el ciclo de recorrido para el array Paul, y lo aumento de 1 en 1 hasta su máxima posición.
-  console.log(paul[x]); // Imprimo posición por posición a el Array Paul.
+while (x !== paulLegth) { //Mientras "x" es menor que cantidad de posiciones en el array
+    for (x = 0; x < paulLegth; x++) {// Instancio el ciclo de recorrido para el array Paul, y lo aumento de 1 en 1 hasta su máxima posición.
+    console.log(paul[x]); // Imprimo posición por posición a el Array Paul.
+          console.log("Se encuentra en la posición " + x + " de la lista"); //Imprime la posición en la que se encuentra del array.
+          }
 }
 data = prompt("Añadir Atributo a Paul", "");
 console.log(data);
